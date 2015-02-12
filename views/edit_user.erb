@@ -1,0 +1,16 @@
+<h1>EDIT USER</h1>
+
+<!-- <form action="/users" method="post">
+<input type="hidden" name="_method" id="put">
+  Name: <input type="text" name="person">
+
+  <<!Last name: <input type="text" name="last"> -->
+  <!-- <input type="submit" value="Change user">
+  </form> 
+  -->
+<form action="/users/<%= @user[:id]%>" method="post">
+    <input type="hidden" name="_method" value="put">
+  First Name: <input type="text" name="first_name" value"<%= @user[:first]%>">
+ <!--  Last Name: <input type="text" name="last_name" value="<%= @user[:last]%>"> -->
+    <input type="submit" value="Change Name">
+  </form>
